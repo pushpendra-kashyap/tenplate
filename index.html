@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wishes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+      }
+      .background {
+        max-width: 700px;
+        object-fit: cover;
+        /* border: 10px solid #d18e10; */
+        
+      }
+      @media screen and (max-width: 412px) {
+        .background {
+          max-width: 480px;
+        }
+      }
+      .relative {
+        position: relative;
+      }
+      .absolute {
+        position: absolute;
+        z-index: 1;
+      }
+      .logo {
+        padding-top: 30px;
+        padding-left: 20px;
+        height: 100px;
+      }
+      @media screen and (max-width: 480px) {
+        .logo {
+          padding-top: 30px;
+          padding-left: 50px;
+          height: 60px;
+        }
+      }
+      .backgroundColor {
+        position: absolute;
+        inset: 0;
+        background: rgb(63, 94, 251);
+        background: radial-gradient(
+          circle,
+          rgba(63, 94, 251, 0) 0%,
+          rgba(63, 94, 251, 0) 10%,
+          rgba(63, 94, 251, 0) 25%,
+          rgba(20, 20, 20, 1) 100%
+        );
+      }
+      .text {
+        display: flex;
+        justify-content: center;
+      }
+      .heding {
+        position: absolute;
+        bottom: 300px;
+        font-size: calc(2px + 5vh);
+        line-height: calc(2px + 5vh);
+        /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+          0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+        color: #fccaff; */
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+          0 0 40px #eaa82e, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        color: #fff6a9;
+        text-align: center;
+        font-family: 'Sacramento', cursive;
+        animation: blink 12s infinite;
+        -webkit-animation: blink 12s infinite;
+      }
+
+      @keyframes blink {
+        20%,
+        24%,
+        55% {
+          color: #5f5a5a;
+          text-shadow: none;
+        }
+
+        0%,
+        19%,
+        21%,
+        23%,
+        25%,
+        54%,
+        56%,
+        100% {
+          /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+          text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+            0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00,
+            0 0 98px #ff0000;
+          color: #fff6a9;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .heding {
+          position: absolute;
+          bottom: 230px;
+          font-size: calc(2px + 4vh);
+          line-height: calc(2px + 5vh);
+          /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+          0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+        color: #fccaff; */
+          text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+            0 0 40px #eaa82e, 0 0 60px #ff0000, 0 0 10px #ff8d00,
+            0 0 98px #ff0000;
+          color: #fff6a9;
+          text-align: center;
+          font-family: 'Sacramento', cursive;
+          animation: blink 12s infinite;
+          -webkit-animation: blink 12s infinite;
+        }
+
+        @keyframes blink {
+          20%,
+          24%,
+          55% {
+            color: #5f5a5a;
+            text-shadow: none;
+          }
+
+          0%,
+          19%,
+          21%,
+          23%,
+          25%,
+          54%,
+          56%,
+          100% {
+            /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+            text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+              0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00,
+              0 0 98px #ff0000;
+            color: #fff6a9;
+          }
+        }
+      }
+      .quote {
+        display: flex;
+        justify-content: center;
+      }
+      .quotes {
+        position: absolute;
+        bottom: 230px;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        font-family: 'Noto Sans', sans-serif;
+      }
+      @media screen and (max-width: 480px) {
+        .quote {
+          display: flex;
+          justify-content: center;
+          padding-left: 20px;
+        }
+        .quotes {
+          position: absolute;
+          bottom: 180px;
+          font-size: 20px;
+          color: rgb(255, 255, 255);
+          font-family: 'Sacramento', cursive;
+        }
+      }
+
+      .star-container {
+        position: absolute;
+        right: 0px;
+      }
+      .star {
+        height: 500px;
+        padding-right: 35px;
+      }
+      .star1 {
+        height: 300px;
+        padding-left: 65px;
+      }
+      .star-line {
+        height: 200px;
+      }
+      @media screen and (max-width: 480px) {
+        .star-container {
+          position: absolute;
+          right: 0px;
+        }
+        .star {
+          height: 450px;
+          padding-right: 10px;
+        }
+        .star1 {
+          height: 350px;
+          padding-left: 70px;
+        }
+        .star-line {
+          height: 200px;
+        }
+      }
+      .starLine-container {
+        position: absolute;
+        top: 250px;
+      }
+      .starLine {
+        height: 400px;
+      }
+      @media screen and (max-width: 480px) {
+        .starLine-container {
+          position: absolute;
+          top: 250px;
+        }
+        .starLine {
+          height: 300px;
+        }
+      }
+      /* .footer-container {
+        position: absolute;
+        bottom: 60px;
+      } */
+      .footer-container{
+        display: flex; 
+        bottom:50px; 
+        justify-content:space-between;
+        height: 150px;
+        width: 700px; 
+        background-color: #1E5A54; align-items: center;
+      }
+
+      .logo1 {
+        height: 100px;
+        padding-left: 20px;
+         
+      }
+      @media screen and (max-width: 480px) {
+        .footer-container {
+          display: flex; 
+          bottom:50px; 
+          justify-content:space-between; 
+          height: 100px;
+          width: 480px;
+          background-color: #1E5A54;
+          align-items: center;
+        }
+        .logo1 {
+          padding-left: 50px;
+          height: 60px;
+        }
+      }
+      .hozLine {
+        position: absolute;
+        bottom: 300px;
+      }
+      .hozline-container{
+        bottom:200px;
+        width:698px;
+        border:1px solid #e09406;  
+      }
+      @media screen and (max-width: 480px) {
+       .hozline-container{
+        width: 480px;
+        bottom: 150px;
+       }
+      }
+      .bottom-hozline{
+        bottom:50px;
+        width:698px;
+        border:1px solid #e79701;
+      }
+      @media screen and (max-width: 480px) {
+        .bottom-hozline{
+          bottom:50px;
+          width:480px;
+          border:1px solid #f4c267;
+        }
+      }
+      .contact-conatainer{
+        display: flex; 
+        flex-wrap: wrap; 
+        width:300px; 
+      }
+      @media screen and (max-width: 480px) {
+        .contact-conatainer{
+        display: flex; 
+        flex-wrap: wrap; 
+        width:200px;  
+      }
+      }
+      .social-container{
+        bottom:0px;
+        color: white; 
+        height: 50px;
+        width: 700px;
+        font-size:30px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        background-color: #1E5A54;
+        justify-content:space-around;  
+      }
+      @media screen and (max-width: 480px) {
+        .social-container{
+        width: 480px;
+        font-size:20px; 
+      }
+      }
+      .details-Container{
+        color: #a2bbf0;
+        font-size:large;
+        text-decoration: none;
+      }
+      @media screen and (max-width: 480px) {
+        .details-Container{
+        color: #a2bbf0;
+        font-size:small;
+        text-decoration: none;
+      }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="main">
+        <div class="relative">
+          <div class="absolute">
+            <img src="./image/logo.png" class="logo" />
+          </div>
+          <div>
+            <img src="./image/background.png" class="background" />
+            <div class="backgroundColor">
+              <div class="text">
+                <h1 class="heding">Merry Christmas</h1>
+              </div>
+              <div class="quote">
+                <h1 class="quotes">to all you from Kailash Rugs Industries</h1>
+              </div>
+              <div class="star-container">
+                <img src="./image/Star1.png" class="star" />
+              </div>
+              <div>
+                <img src="./image/Star1.png" class="star1" />
+              </div>
+              <div class="starLine-container">
+                <img src="./image/line.png" class="starLine" />
+              </div>
+              <hr class="absolute hozline-container"/>
+              <div class="absolute footer-container">
+                <div>
+                  <img src="./image/logo.png" class="logo1" />
+                </div>
+                <div class="contact-conatainer">
+                   <h2 style="color:white;">Contact Details</h2>
+                     <a href="https://www.kailashrug.in/" class="details-Container">Website : https://www.kailashrug.in/</a>
+                     <a href="mailto:info@kailashrug.in"  class="details-Container"  >Email : info@kailashrug.in</a>
+                     <a href="tel: +91 5414 243401/243402" class="details-Container"   >Contact : +91 5414 243401/243402</a>
+                   </div>
+                  </div>
+                  <div class="absolute social-container">
+                    <div>
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-whatsapp"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                  </div>
+                 </div>
+                 <div>
+                  <hr class="absolute bottom-hozline" />
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
