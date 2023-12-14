@@ -17,12 +17,15 @@
         margin: 0;
         padding: 0;
       }
+      a{
+        all: unset;
+      }
       .main {
         display: flex;
         justify-content: center;
       }
       .background {
-        max-width: 700px;
+        max-width: 600px;
         object-fit: cover;
         /* border: 10px solid #d18e10; */
         
@@ -42,7 +45,7 @@
       .logo {
         padding-top: 30px;
         padding-left: 20px;
-        height: 100px;
+        height: 90px;
       }
       @media screen and (max-width: 480px) {
         .logo {
@@ -161,7 +164,7 @@
       .quotes {
         position: absolute;
         bottom: 230px;
-        font-size: 30px;
+        font-size: 35px;
         color: rgb(255, 255, 255);
         font-family: 'Noto Sans', sans-serif;
       }
@@ -237,12 +240,12 @@
         bottom:50px; 
         justify-content:space-between;
         height: 150px;
-        width: 700px; 
+        width: 600px; 
         background-color: #1E5A54; align-items: center;
       }
 
       .logo1 {
-        height: 100px;
+        height: 90px;
         padding-left: 20px;
          
       }
@@ -267,7 +270,7 @@
       }
       .hozline-container{
         bottom:200px;
-        width:698px;
+        width:599px;
         border:1px solid #e09406;  
       }
       @media screen and (max-width: 480px) {
@@ -278,7 +281,7 @@
       }
       .bottom-hozline{
         bottom:50px;
-        width:698px;
+        width:599px;
         border:1px solid #e79701;
       }
       @media screen and (max-width: 480px) {
@@ -304,13 +307,15 @@
         bottom:0px;
         color: white; 
         height: 50px;
-        width: 700px;
-        font-size:30px; 
-        display: flex; 
+        width: 600px;
+        font-size:25px; 
+        display: flex;
+        gap: 20px; 
         justify-content: center; 
         align-items: center; 
         background-color: #1E5A54;
-        justify-content:space-around;  
+        justify-content:space-around;
+        
       }
       @media screen and (max-width: 480px) {
         .social-container{
@@ -338,7 +343,9 @@
       <div class="main">
         <div class="relative">
           <div class="absolute">
-            <img src="./image/logo.png" class="logo" />
+            <a href="https://www.kailashrug.in/">
+              <img src="./image/logo.png" class="logo" />
+            </a>
           </div>
           <div>
             <img src="./image/background.png" class="background" />
@@ -347,7 +354,7 @@
                 <h1 class="heding">Merry Christmas</h1>
               </div>
               <div class="quote">
-                <h1 class="quotes">to all you from Kailash Rugs Industries</h1>
+                <h1 class="quotes">May God's love be with you</h1>
               </div>
               <div class="star-container">
                 <img src="./image/Star1.png" class="star" />
@@ -361,7 +368,9 @@
               <hr class="absolute hozline-container"/>
               <div class="absolute footer-container">
                 <div>
-                  <img src="./image/logo.png" class="logo1" />
+                  <a href="https://www.kailashrug.in/">
+                    <img src="./image/logo.png" class="logo1" />
+                  </a>
                 </div>
                 <div class="contact-conatainer">
                    <h2 style="color:white;">Contact Details</h2>
@@ -371,11 +380,11 @@
                    </div>
                   </div>
                   <div class="absolute social-container">
-                    <div>
-                      <i class="fa-brands fa-facebook"></i>
-                      <i class="fa-brands fa-whatsapp"></i>
-                      <i class="fa-brands fa-instagram"></i>
-                      <i class="fa-brands fa-linkedin"></i>
+                    <div style="display: flex; gap:15px;">
+                      <a href="https://www.facebook.com/kailashrugindustries/" class="fa-brands fa-facebook color-decoration" style="color: #fefdfd; text-decoration: none;"></a>
+                      <a href="https://www.instagram.com/kailashrug/" class="fa-brands fa-whatsapp color-decoration"></a>
+                      <a href="https://wa.me/919935674955" class="fa-brands fa-instagram color-decoration"></a>
+                      <a href="https://www.linkedin.com/company/kailash-rug-industries" class="fa-brands fa-linkedin "></a>
                     </div>
                   </div>
                  </div>
