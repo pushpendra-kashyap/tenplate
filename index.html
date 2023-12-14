@@ -57,15 +57,7 @@
       .backgroundColor {
         position: absolute;
         inset: 0;
-        background: rgb(63, 94, 251);
-        background: radial-gradient(
-          circle,
-          rgba(63, 94, 251, 0) 0%,
-          rgba(63, 94, 251, 0) 10%,
-          rgba(63, 94, 251, 0) 25%,
-          rgba(20, 20, 20, 1) 100%
-        );
-      }
+      } 
       .text {
         display: flex;
         justify-content: center;
@@ -73,8 +65,8 @@
       .heding {
         position: absolute;
         bottom: 300px;
-        font-size: calc(2px + 5vh);
-        line-height: calc(2px + 5vh);
+        font-size: calc(2px + 4.5vh);
+        line-height: calc(2px + 4vh);
         /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
           0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
         color: #fccaff; */
@@ -116,8 +108,8 @@
         .heding {
           position: absolute;
           bottom: 230px;
-          font-size: calc(2px + 4vh);
-          line-height: calc(2px + 5vh);
+          font-size: calc(2px + 2.5vh);
+          line-height: calc(2px + 3vh);
           /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
           0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
         color: #fccaff; */
@@ -166,7 +158,7 @@
         bottom: 230px;
         font-size: 35px;
         color: rgb(255, 255, 255);
-        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Sacramento', cursive;
       }
       @media screen and (max-width: 480px) {
         .quote {
@@ -215,33 +207,17 @@
           height: 200px;
         }
       }
-      .starLine-container {
-        position: absolute;
-        top: 250px;
-      }
-      .starLine {
-        height: 400px;
-      }
-      @media screen and (max-width: 480px) {
-        .starLine-container {
-          position: absolute;
-          top: 250px;
-        }
-        .starLine {
-          height: 300px;
-        }
-      }
-      /* .footer-container {
+      .footer-container {
         position: absolute;
         bottom: 60px;
-      } */
+      }
       .footer-container{
         display: flex; 
         bottom:50px; 
         justify-content:space-between;
         height: 150px;
         width: 600px; 
-        background-color: #1E5A54; align-items: center;
+        background-color: #277B72; align-items: center;
       }
 
       .logo1 {
@@ -256,7 +232,7 @@
           justify-content:space-between; 
           height: 100px;
           width: 480px;
-          background-color: #1E5A54;
+          background-color: #277B72;
           align-items: center;
         }
         .logo1 {
@@ -304,17 +280,18 @@
       }
       }
       .social-container{
+        position: absolute;
         bottom:0px;
         color: white; 
         height: 50px;
         width: 600px;
         font-size:25px; 
         display: flex;
-        gap: 20px; 
+        gap: 10px; 
         justify-content: center; 
         align-items: center; 
-        background-color: #1E5A54;
-        justify-content:space-around;
+        background-color: #277B72;
+     
         
       }
       @media screen and (max-width: 480px) {
@@ -324,13 +301,13 @@
       }
       }
       .details-Container{
-        color: #a2bbf0;
+        color: #dfe4f0;
         font-size:large;
         text-decoration: none;
       }
       @media screen and (max-width: 480px) {
         .details-Container{
-        color: #a2bbf0;
+        color: #bfcae2;
         font-size:small;
         text-decoration: none;
       }
@@ -348,7 +325,7 @@
             </a>
           </div>
           <div>
-            <img src="./image/background.png" class="background" />
+            <img src="./image/background3.png" class="background" />
             <div class="backgroundColor">
               <div class="text">
                 <h1 class="heding">Merry Christmas</h1>
@@ -362,9 +339,7 @@
               <div>
                 <img src="./image/Star1.png" class="star1" />
               </div>
-              <div class="starLine-container">
-                <img src="./image/line.png" class="starLine" />
-              </div>
+      
               <hr class="absolute hozline-container"/>
               <div class="absolute footer-container">
                 <div>
@@ -379,13 +354,19 @@
                      <a href="tel: +91 5414 243401/243402" class="details-Container"   >Contact : +91 5414 243401/243402</a>
                    </div>
                   </div>
-                  <div class="absolute social-container">
-                    <div style="display: flex; gap:15px;">
-                      <a href="https://www.facebook.com/kailashrugindustries/" class="fa-brands fa-facebook color-decoration" style="color: #fefdfd; text-decoration: none;"></a>
-                      <a href="https://www.instagram.com/kailashrug/" class="fa-brands fa-whatsapp color-decoration"></a>
-                      <a href="https://wa.me/919935674955" class="fa-brands fa-instagram color-decoration"></a>
-                      <a href="https://www.linkedin.com/company/kailash-rug-industries" class="fa-brands fa-linkedin "></a>
-                    </div>
+                  <div class="social-container">
+                    <a href="https://www.facebook.com/kailashrugindustries/">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/kailash-rug-industries">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://wa.me/919935674955">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kailashrug/">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
                   </div>
                  </div>
                  <div>
