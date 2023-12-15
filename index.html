@@ -20,6 +20,10 @@
       a{
         all: unset;
       }
+      a:hover{
+       text-decoration:underline;
+       color: #f4a20a;
+      }
       .main {
         display: flex;
         justify-content: center;
@@ -44,8 +48,8 @@
       }
       .logo {
         padding-top: 30px;
-        padding-left: 20px;
-        height: 90px;
+        padding-left:30px;
+        height: 80px;
       }
       @media screen and (max-width: 480px) {
         .logo {
@@ -64,9 +68,9 @@
       }
       .heding {
         position: absolute;
-        bottom: 300px;
-        font-size: calc(2px + 6vh);
-        line-height: calc(2px + 5vh);
+        bottom: 250px;
+        font-size: calc(4px + 6vh);
+        line-height: calc(4px + 5vh);
         /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
           0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
         color: #fccaff; */
@@ -107,9 +111,9 @@
       @media screen and (max-width: 480px) {
         .heding {
           position: absolute;
-          bottom: 230px;
-          font-size: calc(2px + 2.5vh);
-          line-height: calc(2px + 3vh);
+          bottom: 200px;
+          font-size: calc(3px + 4vh);
+          line-height: calc(3px + 4vh);
           /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
           0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
         color: #fccaff; */
@@ -215,13 +219,13 @@
         display: flex; 
         bottom:50px; 
         justify-content:space-between;
-        height: 150px;
+        height: 100px;
         width: 600px; 
         background-color: #134c46; align-items: center;
       }
 
       .logo1 {
-        height: 90px;
+        height: 80px;
         padding-left: 20px;
          
       }
@@ -230,7 +234,7 @@
           display: flex; 
           bottom:50px; 
           justify-content:space-between; 
-          height: 100px;
+          height: 75px;
           width: 480px;
           background-color:#134c46;
           align-items: center;
@@ -245,14 +249,14 @@
         bottom: 300px;
       }
       .hozline-container{
-        bottom:200px;
+        bottom:150px;
         width:599px;
         border:1px solid #e09406;  
       }
       @media screen and (max-width: 480px) {
        .hozline-container{
         width: 480px;
-        bottom: 150px;
+        bottom: 125px;
        }
       }
       .bottom-hozline{
@@ -268,6 +272,7 @@
         }
       }
       .contact-conatainer{
+        cursor: pointer;
         display: flex; 
         flex-wrap: wrap; 
         width:250px; 
@@ -282,7 +287,8 @@
       .social-container{
         position: absolute;
         bottom:0px;
-        color: white; 
+        color: rgb(255,140,0);
+        cursor: pointer;
         height: 50px;
         width: 600px;
         font-size:25px; 
@@ -291,8 +297,10 @@
         justify-content: center; 
         align-items: center; 
         background-color: #1a4945;
-     
-        
+      }
+
+      .social-container a :hover{
+        color: #dfe4f0;
       }
       @media screen and (max-width: 480px) {
         .social-container{
@@ -330,7 +338,7 @@
                 <h1 class="heding">Merry Christmas</h1>
               </div>
               <div class="quote">
-                <h1 class="quotes">May God's love be with you</h1>
+                <!-- <h1 class="quotes">May God's love be with you</h1> -->
               </div>
               <div class="star-container">
                 <img src="./image/Star1.png" class="star" />
